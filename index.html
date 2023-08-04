@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Food Crud</h1>
+
+        <form id="foodform">
+            <input type="text" autocomplete="off" placeholder="add new food" id="foodName"/>
+            <button class = "succes">
+                <i class="add">add</i>
+            </button>
+        </form>
+
+        <div class="food" id="foodlist">
+
+            <div class = "food-list">
+
+                <p>
+                    <i class="food-name"></i>
+                    <span>Food : </span>
+                </p>
+
+                <div class="button">
+                    <button class="edit" onclick="Edit()">
+                        Edit
+                    </button>
+
+                    <button class="delete" onclick="Delete()">
+                        Delete
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
